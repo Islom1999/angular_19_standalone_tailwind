@@ -1,0 +1,17 @@
+<nav class="flex justify-between items-center w-[80%] mx-auto">
+    <div class="brand">
+        <img src="/logo.png" />
+    </div>
+    <div class="menu">
+        <ul class="flex gap-10">
+            <li class="text-3xl"><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a></li>
+            <li class="text-3xl"><a [routerLink]="['/about']">About</a></li>
+            <li class="text-3xl"><a [routerLink]="['/about', 'detail']">About detail</a></li>
+            <li class="text-3xl"><a [routerLink]="['/about', 'info']">About info</a></li>
+        </ul>
+    </div>
+    <div class="auth">
+        <button class="bg-gray-200 text-green-500 text-2xl rounded-2xl py-4 px-8 mr-5">Регистрация</button>
+        <button class="bg-green-500 text-black text-2xl rounded-2xl py-4 px-8">Войти</button>
+    </div>
+</nav>
